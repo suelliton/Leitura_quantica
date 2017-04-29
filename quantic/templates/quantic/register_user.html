@@ -1,0 +1,45 @@
+{% extends 'quantic/base.html' %}
+{% load staticfiles %}
+{% block content %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"><!--login css-->
+</head>
+<body>
+<div class="col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+  <div class="register-page" >
+      <div class="register-form" >
+        <div class="form-group">
+        <form method="post" action="register_user" class="">
+            {% csrf_token %}
+            <label>Nome</label>
+            {{form_cadastro_user.name| add_class:"form-control"}}
+            <label>Email</label>
+            {{form_cadastro_user.email | add_class:"form-control"}}
+            <label>Login</label>
+            {{form_cadastro_user.login | add_class:"form-control"}}
+            <label>Senha</label>
+            {{form_cadastro_user.password| add_class:"form-control" }}
+            <label>Repita a senha</label>
+            {{form_cadastro_user.rpassword | add_class:"form-control"}}
+            <button type="submit" class=" btn btn-primary">Create</button>
+            <p class="message">Already registered? <a href="login">Sign In</a></p>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+{% endblock %}

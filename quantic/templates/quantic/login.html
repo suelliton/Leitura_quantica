@@ -1,0 +1,45 @@
+{% extends 'quantic/base.html' %}
+{% load staticfiles %}
+{% block content %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"><!--login css-->
+</head>
+<body>
+  <div class="col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+    <div class="login-page">
+        <div class="login-form">
+          <div class="form-group">
+          <form method="POST" action="login">
+              {% csrf_token %}
+              <label>Login</label>
+              {{form_login_user.login | add_class:"form-control"}}
+              <label>Senha</label>
+              {{form_login_user.password | add_class:"form-control" }}
+              <button type="submit" class="btn btn-primary">Login</button>
+                  <p class="message">Not registered? <a href="register_user"  >Create an account</a></p>
+                  {{message}}
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+{% endblock %}

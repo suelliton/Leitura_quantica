@@ -1,0 +1,39 @@
+{% extends 'quantic/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login</title>
+    <link href="{% static 'css/confirma_cadastro.css' %}" rel="stylesheet"><!--login css-->
+</head>
+<body>
+
+<div class="login-page" >
+    <div class="form" >
+		<div><p>Cadastro realizado com sucesso!, acesse seu email <span>{{email}}</span> para confirmar</p></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'quantic/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"><!--login css-->
+</head>
+<body>
+
+<div class="container">
+	<div class="user-top">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="user-icon" src="{{image_user}}">
+					<h4><a href="user">{{login_logged}}</a></h4>
+				</div>
+				<div class="col-md-1 offset-md-8 ">
+          <a href="logout"><button type="button" class="btn btn-danger btn-sm ">Logout</button></a>
+				</div>
+			</div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <nav class="container navbar navbar-toggleable-md navbar-light bg-faded bg-inverse" >
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-center text-white" href="#">Lendo</a>
+        <a class="navbar-brand text-center text-white" href="#">Ler depois</a>
+        <a class="navbar-brand text-center text-white" href="#">Lidos</a>
+        <a class="navbar-brand text-center text-white" href="#">Favoritos</a>
+        <a class="navbar-brand text-center text-white" href="#">Enviados</a>
+
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+  <div class="books-container">
+    <div class="container">
+      livross
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
+
+
+{% endblock %}

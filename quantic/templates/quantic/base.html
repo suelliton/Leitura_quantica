@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html ng-app="quantic">
+  <head>
+    <meta charset="utf-8">
+    <title>Leitura Quântica</title>
+    <link href="{% static 'css/base.css'%}" rel="stylesheet">  <!--estilo base.css-->  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" /><!--bootstrap 4-->
+ 
+  </head>
+  <body ng-controller="ctrl_quantic">
+    
+    {% block content %}
+
+
+
+
+
+
+
+
+    {% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script><!--angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--jquery-->
+    <script src="{% static 'js/quantic.js' %}"></script>   <!--quantic.js-->  
+
+  </body>
+</html>

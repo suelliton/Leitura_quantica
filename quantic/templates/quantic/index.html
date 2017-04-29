@@ -1,0 +1,112 @@
+{% extends 'quantic/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"><!--login css-->
+</head>
+<body>
+
+  <div class="container">
+  	<div class="container user-top">
+  			<div class="row">
+  				<div class="col-md-10 col-sm-9 col-8  ">
+
+            <img class="user-icon" src={{image_user}} >
+            {{image_user}}
+  					<h4><a href="user">{{login_logged}}</a></h4>
+  				</div>
+  				<div class="col-md-2 col-sm-3 col-4">
+            <a href="logout"><button type="button" id="btn-logout" class="btn btn-danger btn-sm " >Logout</button></a>
+  				</div>
+  			</div>
+    </div>
+
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-inverse p-4 ">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#"><h4 class="text-white">Fisica quântica</h4></a>
+            <a href="#"><h4 class="text-white">Tantra</h4></a>
+            <a href="#"><h4 class="text-white">Projeção Astral</h4></a>
+            <a href="#"><h4 class="text-white">Yoga</h4></a>
+            <a href="#"><h4 class="text-white">Persuasão</h4></a>
+            <a href="#"><h4 class="text-white">Ascenção Planetária</h4></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><h4 class="text-white">Budismo</h4></a>
+            <a href="#"><h4 class="text-white">Hipnose</h4></a>
+            <a href="#"><h4 class="text-white">Hinduísmo</h4></a>
+            <a href="#"><h4 class="text-white">Ciência</h4></a>
+            <a href="#"><h4 class="text-white">Hérmetismo</h4></a>
+            <a href="#"><h4 class="text-white">Xamanismo</h4></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><h4 class="text-white">Sedução</h4></a>
+            <a href="#"><h4 class="text-white">Espiritismo</h4></a>
+            <a href="#"><h4 class="text-white">Filosofia</h4></a>
+            <a href="#"><h4 class="text-white">Lei da Atração</h4></a>
+            <a href="#"><h4 class="text-white">Mestres Ascensos</h4></a>
+            <a href="#"><h4 class="text-white">Extra-Terrestres</h4></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><h4 class="text-white">Saúde/Médicina</h4></a>
+            <a href="#"><h4 class="text-white">Motivação</h4></a>
+            <a href="#"><h4 class="text-white">Produtividade</h4></a>
+            <a href="#"><h4 class="text-white">Teosofia</h4></a>
+            <a href="#"><h4 class="text-white">Outros</h4></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <nav class="navbar navbar-inverse bg-inverse ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> </span><h5>Categorias</h5>
+        </button>
+
+      <div class="col-md-3 offset-md-9">
+        <input class="form-control" id="pesquisa" placeholder="Pesquisa" >
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+</div><!--container-->
+
+  <div class="container">
+    <div class="books-container">
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+{% endblock %}
